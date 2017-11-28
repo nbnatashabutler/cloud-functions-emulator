@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+div class="menu">
+<?php include 'menu.php';?>
+</div>
+<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+<form action="welcome.php" method="post">
+Name: <input type="text" name="name"><br>span class="error">* <?php echo $nameErr;?></span>
+<br><br>
+E-mail: <input type="text" name="email"><br>span class="error">* <?php echo $nameErr;?></span>
+<br><br>
+<input type="submit">
+</form>
+<form action="upload.php" method="post" enctype="multipart/form-data">
+    Select image to upload:
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="submit" value="Upload Image" name="submit">
+</form>
+<?php include 'vars.php';?>
+echo "I have a $color $car.";
+<p>Welcome <?php echo $_POST["name"]<<?php echo "I have a $color $car.";; ?></p>
+<h1>This is a Heading</h1>
+<p>This is a paragraph.<a href="https://www.w3schools.com">This is a link</a></p>
+<?php include 'footer.php';?>
+
+</body>
+</html>
